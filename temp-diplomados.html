@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomados - CEIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="diplomados.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="nav-header">
+        <div class="nav-container">
+            <a href="dental-center-website.html" class="brand">
+                <img src="images/logo-ceio.png" alt="CEIO" class="brand-logo">
+                <span>CEIO</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="dental-center-website.html">Inicio</a>
+                <a href="especializaciones.html">Especialidades</a>
+                <a href="diplomados.html" class="active">Diplomados</a>
+                <a href="direcciones.html">Sedes</a>
+                <a href="practicas.html">Prácticas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="contacto.html" class="nav-cta">Inscríbete</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop class="hero-bg-video">
+                <source src="videos/video-diplomados.mp4" type="video/mp4">
+                <source src="videos/video-diplomados.webm" type="video/webm">
+                <!-- Fallback image if video doesn't load -->
+                <img src="images/mi-fondo.jpg" alt="Diplomados CEIO" class="hero-bg-image">
+            </video>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Diplomados</h1>
+                <p class="hero-subtitle">Programas especializados que transforman tu práctica profesional</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Programas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Graduados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Docentes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diplomados Section -->
+    <section class="diplomados">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Programas</h2>
+                <p>Formación especializada con certificación internacional</p>
+            </div>
+            
+            <div class="diplomados-grid">
+                <div class="diplomado-card" data-program="ortodoncia">
+                    <div class="card-image">
+                        <img src="images/ortodoncia.jpg" alt="Ortodoncia Integral">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ortodoncia Integral</h3>
+                        <p>Técnicas avanzadas en corrección dental y facial con brackets, alineadores y aparatos funcionales</p>
+                        <div class="card-meta">
+                            <span class="duration">12 meses</span>
+                            <span class="price">9,500 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('ortodoncia')">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="diplomado-card" data-program="endodoncia">
+                    <div class="card-image">
+                        <img src="images/endodoncia.jpg" alt="Endodoncia Moderna">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Endodoncia Moderna</h3>
+                        <p>Tratamiento de conductos con tecnología de punta y técnicas mínimamente invasivas</p>
+                        <div class="card-meta">
+                            <span class="duration">10 meses</span>
+                            <span class="price">7,200 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('endodoncia')">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="diplomado-card" data-program="cirugia">
+                    <div class="card-image">
+                        <img src="images/cirugia.jpg" alt="Cirugía Oral">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cirugía Oral</h3>
+                        <p>Procedimientos quirúrgicos orales y maxilofaciales con técnicas actualizadas</p>
+                        <div class="card-meta">
+                            <span class="duration">6 meses</span>
+                            <span class="price">7,800 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('cirugia')">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="diplomado-card" data-program="estetica">
+                    <div class="card-image">
+                        <img src="images/estetica.jpg" alt="Odontología Estética">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Odontología Estética</h3>
+                        <p>Rehabilitación estética con carillas, coronas y blanqueamientos profesionales</p>
+                        <div class="card-meta">
+                            <span class="duration">7 meses</span>
+                            <span class="price">7,300 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('estetica')">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="diplomado-card" data-program="armonizacion">
+                    <div class="card-image">
+                        <img src="images/armonizacion.jpg" alt="Armonización Orofacial">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Armonización Orofacial</h3>
+                        <p>Técnicas avanzadas en estética facial, rellenos y tratamientos minimamente invasivos</p>
+                        <div class="card-meta">
+                            <span class="duration">6 meses</span>
+                            <span class="price">9,400 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('armonizacion')">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="diplomado-card" data-program="implantologia">
+                    <div class="card-image">
+                        <img src="images/implantologia.jpg" alt="Implantología Oral">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Implantología Oral</h3>
+                        <p>Formación integral en implantes dentales con énfasis en técnicas quirúrgicas y rehabilitación</p>
+                        <div class="card-meta">
+                            <span class="duration">8 meses</span>
+                            <span class="price">8,000 Bs</span>
+                        </div>
+                        <button class="card-cta" onclick="openModal('implantologia')">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>¿Listo para transformar tu carrera?</h2>
+                <p>Inscripciones abiertas • Cupos limitados • Certificación internacional</p>
+                <a href="contacto.html" class="cta-button">Inscríbete ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CEIO</h3>
+                    <p>Centro de Enseñanza Integral en Odontología. Formando profesionales de excelencia desde 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Programas</h3>
+                    <a href="diplomados.html">Diplomados</a>
+                    <a href="especializaciones.html">Especialidades</a>
+                    <a href="dental-center-website.html#cursos">Cursos</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Calle Hermanos Manchego<br>La Paz, Bolivia</p>
+                    <p>+591 62367086</p>
+                    <p>ceiodj2020@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CEIO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Datos detallados de cada diplomado
+        const diplomadosData = {
+            ortodoncia: {
+                title: "Ortodoncia Integral",
+                duration: "12 meses",
+                price: "9,500 Bs",
+                schedule: "Viernes y Sábados",
+                hours: "8:00 AM - 5:00 PM",
+                description: "Programa integral que abarca desde diagnóstico hasta tratamientos avanzados en ortodoncia.",
+                content: [
+                    "Diagnóstico y planificación ortodóntica",
+                    "Ortodoncia con brackets metálicos y estéticos",
+                    "Sistemas de alineadores transparentes",
+                    "Ortodoncia interceptiva en niños",
+                    "Aparatos funcionales y ortopédicos",
+                    "Retención y estabilidad post-tratamiento",
+                    "Casos complejos y cirugía ortognática",
+                    "Práctica clínica supervisada"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "2 años de experiencia mínima"
+                ]
+            },
+            endodoncia: {
+                title: "Endodoncia Moderna",
+                duration: "10 meses",
+                price: "7,200 Bs",
+                schedule: "Sábados",
+                hours: "8:00 AM - 6:00 PM",
+                description: "Técnicas actuales en endodoncia con tecnología de última generación.",
+                content: [
+                    "Diagnóstico endodóntico avanzado",
+                    "Técnicas de instrumentación rotaria",
+                    "Sistemas de obturación modernos",
+                    "Endodoncia regenerativa",
+                    "Retratamientos endodónticos",
+                    "Traumatología dental",
+                    "Cirugía apical y periapical",
+                    "Casos clínicos complejos"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "Experiencia en odontología general"
+                ]
+            },
+            cirugia: {
+                title: "Cirugía Oral",
+                duration: "6 meses",
+                price: "7,800 Bs",
+                schedule: "Viernes y Sábados",
+                hours: "8:00 AM - 4:00 PM",
+                description: "Procedimientos quirúrgicos orales con técnicas mínimamente invasivas.",
+                content: [
+                    "Técnicas de anestesia local y sedación",
+                    "Exodoncias simples y complejas",
+                    "Cirugía de terceros molares",
+                    "Frenectomías y plastias",
+                    "Cirugía preprotésica",
+                    "Manejo de complicaciones",
+                    "Cirugía reconstructiva menor",
+                    "Práctica en quirófano"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "Curso básico de cirugía"
+                ]
+            },
+            estetica: {
+                title: "Odontología Estética",
+                duration: "7 meses",
+                price: "7,300 Bs",
+                schedule: "Sábados y Domingos",
+                hours: "8:00 AM - 5:00 PM",
+                description: "Transformación de sonrisas con técnicas estéticas avanzadas.",
+                content: [
+                    "Diseño de sonrisa digital",
+                    "Carillas de porcelana y resina",
+                    "Coronas estéticas libres de metal",
+                    "Blanqueamiento profesional",
+                    "Rehabilitación oral estética",
+                    "Fotografía dental",
+                    "Comunicación con laboratorio",
+                    "Casos clínicos integrales"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "Conocimientos básicos en prótesis"
+                ]
+            },
+            armonizacion: {
+                title: "Armonización Orofacial",
+                duration: "6 meses",
+                price: "9,400 Bs",
+                schedule: "Domingos",
+                hours: "8:00 AM - 6:00 PM",
+                description: "Técnicas de rejuvenecimiento facial no quirúrgico.",
+                content: [
+                    "Anatomía facial aplicada",
+                    "Ácido hialurónico y rellenos",
+                    "Toxina botulínica tipo A",
+                    "Bioestimuladores de colágeno",
+                    "Técnicas de aplicación segura",
+                    "Manejo de complicaciones",
+                    "Protocolos de bioseguridad",
+                    "Práctica clínica supervisada"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "Curso de bioseguridad"
+                ]
+            },
+            implantologia: {
+                title: "Implantología Oral",
+                duration: "8 meses",
+                price: "8,000 Bs",
+                schedule: "Viernes y Sábados",
+                hours: "8:00 AM - 5:00 PM",
+                description: "Rehabilitación con implantes dentales y técnicas quirúrgicas avanzadas.",
+                content: [
+                    "Diagnóstico por imágenes 3D",
+                    "Planificación quirúrgica digital",
+                    "Técnicas de colocación de implantes",
+                    "Carga inmediata y diferida",
+                    "Regeneración ósea guiada",
+                    "Prótesis sobre implantes",
+                    "Complicaciones y mantenimiento",
+                    "Cirugías en vivo"
+                ],
+                requirements: [
+                    "Título de Odontólogo",
+                    "Colegiatura vigente",
+                    "Experiencia en cirugía oral"
+                ]
+            }
+        };
+
+        // Función para abrir modal con información del diplomado
+        function openModal(programId) {
+            const program = diplomadosData[programId];
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+
+            modalTitle.textContent = program.title;
+            
+            modalBody.innerHTML = `
+                <div class="program-details">
+                    <div class="detail-section">
+                        <h4>Información General</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Duración:</span>
+                                <span class="value">${program.duration}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Inversión:</span>
+                                <span class="value">${program.price}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Horarios:</span>
+                                <span class="value">${program.schedule}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Horas:</span>
+                                <span class="value">${program.hours}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>Descripción</h4>
+                        <p>${program.description}</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>Contenido del Programa</h4>
+                        <ul class="content-list">
+                            ${program.content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>Requisitos</h4>
+                        <ul class="requirements-list">
+                            ${program.requirements.map(req => `<li>${req}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn-primary">Inscribirme Ahora</a>
+                        <button onclick="closeModal()" class="btn-secondary">Cerrar</button>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Función para cerrar modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.diplomado-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
