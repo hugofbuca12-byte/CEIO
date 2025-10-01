@@ -106,12 +106,15 @@ function Direcciones() {
       {/* Sedes Section */}
       <section className="sedes-section">
         <div className="container">
+          {/* Cabecera de la sección. */}
           <div className="section-header">
             <h2>Encuentra tu sede más cercana</h2>
             <p>Contamos con instalaciones equipadas</p>
           </div>
           
+          {/* Grid que contiene las tarjetas de cada sede. */}
           <div className="sedes-grid">
+            {/* Tarjeta para la Sede La Paz. */}
             <div className="sede-card" data-sede="La Paz">
               <div className="card-image">
                 <img src="/images/sede-lapaz-direcciones.jpg" alt="Sede La Paz" />
@@ -122,6 +125,7 @@ function Direcciones() {
               </div>
               <div className="card-content">
                 <h3>Sede La Paz</h3>
+                {/* Información detallada de la sede. */}
                 <div className="sede-info">
                   <div className="info-item">
                     <FaMapMarkerAlt />
@@ -140,6 +144,7 @@ function Direcciones() {
                     <span>Lun - Vie: 9:00 AM - 6:00 PM</span>
                   </div>
                 </div>
+                {/* Acciones: enlaces a Google Maps y WhatsApp. */}
                 <div className="card-actions">
                   <a 
                     href="https://www.google.com/maps/place/Centro+de+Ense%C3%B1anza+Integral+en+Odontolog%C3%ADa/@-16.510273,-68.1241261,21z/data=!4m6!3m5!1s0x915f21d983c0d10d:0xa7233f16f913c1f6!8m2!3d-16.5101741!4d-68.1241065!16s%2Fg%2F11l31srtn4?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
@@ -158,6 +163,7 @@ function Direcciones() {
               </div>
             </div>
 
+            {/* Tarjeta para la Sede Santa Cruz. */}
             <div className="sede-card" data-sede="Santa Cruz">
               <div className="card-image">
                 <img src="/images/sede-santacruz-direcciones.jpg" alt="Sede Santa Cruz" />
@@ -204,6 +210,7 @@ function Direcciones() {
               </div>
             </div>
 
+            {/* Tarjeta para la Sede Cochabamba. */}
             <div className="sede-card" data-sede="Cochabamba">
               <div className="card-image">
                 <img src="/images/sede-cochabamba-direcciones.jpg" alt="Sede Cochabamba" />
@@ -251,9 +258,11 @@ function Direcciones() {
             </div>
           </div>
           
+          {/* Sección de Llamada a la Acción (CTA): Invita al usuario a agendar una cita. */}
           <div className="cta-section">
             <h2>¿Necesitas una cita?</h2>
             <p>Agenda tu consulta en cualquiera de nuestras sedes</p>
+            {/* El componente Link redirige a la página de contacto. */}
             <Link to="/contacto" className="cta-button">
               <FaCalendarPlus />
               Agendar Cita
