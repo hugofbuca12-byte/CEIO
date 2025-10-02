@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import RedSquare from '../components/RedSquare';
 
 function Practicas() {
   return (
@@ -57,6 +58,7 @@ function Practicas() {
           }}>
             Prácticas Profesionales
           </h1>
+          <RedSquare />
           <p style={{
             color: 'white',
             fontSize: '1.2rem',

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import RedSquare from '../components/RedSquare';
 
 function Home() {
   useEffect(() => {
@@ -216,6 +217,7 @@ function Home() {
               letterSpacing: '-0.02em',
               fontFamily: 'Inter, sans-serif'
             }}>Toma el control de tu carrera en odontología</h1>
+            <RedSquare />
             <Link to="/diplomados" 
               className="cta-button" 
               onMouseOver={(e) => {

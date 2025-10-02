@@ -13,6 +13,7 @@ import {
   FaEnvelope
 } from 'react-icons/fa';
 import '../styles/contacto.css';
+import RedSquare from '../components/RedSquare';
 
 function Contacto() {
   const [formData, setFormData] = useState({
@@ -134,6 +135,7 @@ function Contacto() {
             }}>
               Contáctanos
             </h1>
+            <RedSquare />
             <p className="hero-subtitle" style={{
               color: 'white',
               textAlign: 'center',

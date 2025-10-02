@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import RedSquare from '../components/RedSquare';
 
 function Diplomados() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -257,6 +258,7 @@ function Diplomados() {
               letterSpacing: '-0.02em',
               fontFamily: 'Inter, sans-serif'
             }}>Diplomados</h1>
+            <RedSquare />
             
             <p style={{
               fontSize: 'clamp(1.2rem, 2.5vw, 1.4rem)',
