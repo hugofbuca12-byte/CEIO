@@ -1,4 +1,6 @@
 /* Practicas.css - Estilos para la página de prácticas */
+@import './diplomados.css'; /* Reutilizamos estilos base */
+
 * {
     margin: 0;
     padding: 0;
@@ -708,6 +710,189 @@ body {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
+}
+
+/* Practicas Page Styles */
+.practicas-page .hero {
+    height: 60vh;
+}
+
+.practicas-main-content {
+    padding: 4rem 2rem;
+    background-color: #0F0F0F; /* Fondo oscuro */
+    color: #B4B4B4; /* Color de texto claro por defecto */
+}
+
+.practicas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.practicas-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.practicas-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.practicas-header p {
+    font-size: 1.1rem;
+    color: #B4B4B4; /* Texto gris claro */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background-color: #1E1E1E; /* Fondo de tarjeta oscuro */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.feature-icon.estudiantes { background-color: #1565c0; }
+.feature-icon.supervision { background-color: #1565c0; }
+.feature-icon.certificacion { background-color: #1565c0; }
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.feature-card p {
+    color: #B4B4B4; /* Texto gris claro */
+    line-height: 1.6;
+}
+
+.process-section {
+    background-color: #1E1E1E; /* Fondo de sección oscuro */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+.process-section h3 {
+    margin-bottom: 2rem;
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.process-list h4 {
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.process-list h4 .fas {
+    margin-right: 0.5rem;
+}
+
+.process-list .requisitos { color: #1976d2; }
+.process-list .proceso { color: #1976d2; }
+
+.process-list ul, .process-list ol {
+    line-height: 1.8;
+    color: #B4B4B4; /* Texto gris claro */
+    padding-left: 20px;
+}
+
+.practicas-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.practicas-cta h3 {
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.practicas-cta p {
+    margin-bottom: 2rem;
+    color: #B4B4B4; /* Texto gris claro */
+}
+
+.practicas-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1565c0;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.practicas-cta-button:hover {
+    background-color: #1976d2;
+    transform: translateY(-2px);
+}
+
+.sedes-disponibles {
+    padding: 4rem 2rem;
+    background-color: #0F0F0F; /* Fondo oscuro */
+}
+
+.sedes-disponibles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sedes-disponibles-container h3 {
+    margin-bottom: 2rem;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.sedes-disponibles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.sede-item {
+    padding: 1.5rem;
+}
+
+.sede-item h4 {
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+}
+
+.sede-item p {
+    color: #B4B4B4; /* Texto gris claro */
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */

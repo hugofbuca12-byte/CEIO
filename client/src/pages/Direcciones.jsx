@@ -10,7 +10,6 @@ import {
   FaCalendarPlus 
 } from 'react-icons/fa';
 import '../styles/direcciones.css';
-import RedSquare from '../components/RedSquare';
 
 function Direcciones() {
   useEffect(() => {
@@ -90,7 +89,6 @@ function Direcciones() {
             }}>
               Nuestras Sedes
             </h1>
-            <RedSquare />
             <p className="hero-subtitle" style={{
               color: 'white',
               textAlign: 'center',

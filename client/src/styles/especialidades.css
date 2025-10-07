@@ -1,0 +1,11 @@
+/* Reusing diplomados.css styles for Especialidades */
+@import './diplomados.css';
+
+/* Specific styles for Especialidades can be added here if needed */
+.hero-stats .stat-number {
+    color: #00A3FF;
+}
+
+.hero-stats .stat:nth-child(2) .stat-number {
+    color: #9D4EDD;
+}
